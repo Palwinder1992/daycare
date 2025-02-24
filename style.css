@@ -531,7 +531,7 @@ img.right-frame-for-banner.position-absolute {
 
 @media only screen and (max-width: 767px) {
 
-    .d-lg-none {
+    .white.challenges .d-lg-none {
         display: none!important;
     }
 

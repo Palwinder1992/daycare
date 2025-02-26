@@ -10,13 +10,33 @@
 
 		<link rel="stylesheet" href="style.css">
         <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <script src="js/bootstrap.js"></script>
 		<script src="js/popper.min.js"></script>
         <link href="css/swipper.css" rel="stylesheet">
-		<link rel="stylesheet" href="css/fontawesome.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 	</head>
     <body>
+        <div class="modal fade" id="daycareModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content p-5 border-radius">
+                    <div class="modal-header border-0 text-center p-0">
+                        <h5 class="modal-title semibold fs-5 mb-2" id="modalTitle">Check your Daycare Score - Identify Gaps & Boost Enrollments!</h5>
+                        <button type="button" class="popup-close-btn" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center p-0">
+                        <form>
+                            <input type="email" name="email" id="email" placeholder="Enter Your Email Address">
+                            <input type="submit" id="submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container-fluid dark-blue-bg position-relative first-section">
             <div class="container">
                 <div class="row">
@@ -152,8 +172,9 @@
                         Here’s the Secret Sauce Behind Our Growth Accelerator Program</h2>
 
                     <p class="medium font-18">Our Growth Accelerator Program is your all-in-one toolkit to fill every spot, boost revenue, and make your daycare the top choice for parents in your area. With a mix of smart marketing, strategic growth, and continuous optimization, we ensure your daycare stays fully booked year-round.</p>
-		    <p class="medium font-18 mb-5">It’s not just about filling seats—it’s about building a thriving, sustainable business that keeps growing. From targeted ads to expert strategies, we have the knowledge and tools to make your daycare the go-to choice for families.</p>
-                    <img src="media/e book image (1) 1.png" alt="" width="700">
+		            <p class="medium font-18 mb-md-5">It’s not just about filling seats—it’s about building a thriving, sustainable business that keeps growing. From targeted ads to expert strategies, we have the knowledge and tools to make your daycare the go-to choice for families.</p>
+                    <img src="media/ebookimage.webp" alt="" width="700">
+
                 </div>
             </div>
         </div>
@@ -226,21 +247,21 @@
         <div class="white container text-center boost-enrollments">
             <div class="border-radius white box-shadow mx-auto">
                 <h2 class="fs-1 bold text-center mb-4">Check Your Daycare Score—Identify Gaps & Boost Enrollments!</h2>
-                <p class="fs-5 medium mb-4">Want to know how well your daycare is performing? <span class="green bold">Our <span class="green-highlight">FREE</span> Daycare Growth Checklist</span> helps you measure your marketing, branding, and enrollment success—giving you a score out of 100!</p>
+                <p class="fs-5 medium mb-4 sm">Want to know how well your daycare is performing? <span class="green bold">Our <span class="green-highlight">FREE</span> Daycare Growth Checklist</span> helps you measure your marketing, branding, and enrollment success—giving you a score out of 100!</p>
                 <div class="w-445">
-                    <p class="fs-5 semibold"><img src="media\mdi_check-bold.png" alt="green checkmark" class="me-1">Spot hidden growth opportunities</p>
-                    <p class="fs-5 semibold"><img src="media\mdi_check-bold.png" alt="green checkmark" class="me-1">See where your daycare stands</p>
-                    <p class="fs-5 semibold"><img src="media\mdi_check-bold.png" alt="green checkmark" class="me-1">Get expert tips to attract more families</p>
+                    <p class="fs-5 semibold sm"><img src="media\mdi_check-bold.png" alt="green checkmark" class="me-1">Spot hidden growth opportunities</p>
+                    <p class="fs-5 semibold sm"><img src="media\mdi_check-bold.png" alt="green checkmark" class="me-1">See where your daycare stands</p>
+                    <p class="fs-5 semibold sm"><img src="media\mdi_check-bold.png" alt="green checkmark" class="me-1">Get expert tips to attract more families</p>
                 </div>
-                <a href="#" class="yellow-btn fs-5 bold" id="download-free-daycare-score">Get the FREE Daycare Health Score, valued at $99!</a>
+                <a href="#" class="yellow-btn fs-5 bold" id="download-free-daycare-score" data-bs-toggle="modal" data-bs-target="#daycareModal">Get the FREE Daycare Health Score, valued at $99!</a>
             </div>
 
             <div class="w-940">
                 <h2 class="title fs-1 bold"><span class="green">Exclusive Partnership</span>: Only the Best Fit Are Accepted</h2>
                 <p class="yellow fs-5 semibold yellow">We’re Not for Everyone — And That’s What Makes Our Results Exceptional</p>
-                <p class="fs-5 semibold text-start">At NJ Graphica, we partner with businesses ready to embrace transformation. With our Convert Craft Framework, we ensure every project gets the dedication it deserves — which is why only 1 in 5 applicants are selected.</p>
-                <p class="fs-5 medium text-start">We believe in delivering outstanding results, not just ticking boxes. That’s why we carefully vet every potential client to ensure alignment with our expertise and values. If you're serious about skyrocketing your eCommerce success and meet our criteria, you could be among the select few to experience the unmatched power of our CRO-optimized websites.</p>
-                <p class="fs-5 medium text-start">This exclusivity isn’t just about creating FOMO — it’s about guaranteeing excellence. Are you ready to see if you qualify?</p>
+                <p class="fs-5 semibold text-start sm">At NJ Graphica, we partner with businesses ready to embrace transformation. With our Convert Craft Framework, we ensure every project gets the dedication it deserves — which is why only 1 in 5 applicants are selected.</p>
+                <p class="fs-5 medium text-start sm">We believe in delivering outstanding results, not just ticking boxes. That’s why we carefully vet every potential client to ensure alignment with our expertise and values. If you're serious about skyrocketing your eCommerce success and meet our criteria, you could be among the select few to experience the unmatched power of our CRO-optimized websites.</p>
+                <p class="fs-5 medium text-start sm">This exclusivity isn’t just about creating FOMO — it’s about guaranteeing excellence. Are you ready to see if you qualify?</p>
 
                 <div class="month-slot">
                     <p class="font-18 bold text-start">Current Month's Slots</p>
@@ -263,7 +284,7 @@
                         <img src="media/Capture.webp" alt="the little butterflie" class="border-radius">
                         <p class="fs-5 semibold">the little butterflies</p>
                     </div>
-		    <div class="col border-radius">
+		            <div class="col border-radius">
                         <img src="media/le-petite.webp" alt="La Petite Academy" class="border-radius">
                         <p class="fs-5 semibold">La Petite Academy</p>
                     </div>
@@ -275,18 +296,18 @@
             <div class="row">
                 <div class="col-12">
                     <h2 class="fs-1 bold text-center mb-0">How <span class="orange">NJ Graphica</span> Can Help You Scale Faster and Build an Empire with Our Growth Accelerator Program</h2>
-                    <p class="medium fs-5 mt-4 text-center">Imagine your daycare thriving with <span class="semibold">full enrollment</span>, a steady flow of inquiries, and a reputation that speaks for itself. That’s exactly what NJ Graphica delivers.</p>
-		    <p class="medium fs-5 mt-4 text-center">With our <span class="semibold">Growth Accelerator Program</span>, we ensure your daycare gets the <span class="semibold">attention, trust, and enrollments</span> it deserves—without you spending a dime upfront.</p>
-		    <p class="medium fs-5 mt-4 text-center">Here’s how we’ll make it happen:</p>
+                    <p class="medium fs-5 mt-4 text-center sm">Imagine your daycare thriving with <span class="semibold">full enrollment</span>, a steady flow of inquiries, and a reputation that speaks for itself. That’s exactly what NJ Graphica delivers.</p>
+		            <p class="medium fs-5 mt-4 text-center sm">With our <span class="semibold">Growth Accelerator Program</span>, we ensure your daycare gets the <span class="semibold">attention, trust, and enrollments</span> it deserves—without you spending a dime upfront.</p>
+		            <p class="medium fs-5 mt-4 text-center sm">Here’s how we’ll make it happen:</p>
                 </div>
             </div>
 
-            <div class="border-radius white box-shadow mx-auto">
-                <p class="fs-4 bold blue text-center">What We Offer</p>
-                <p class="fs-5 medium text-start">At NJ Graphica, we know what truly matters to you—more enrollments, higher revenue, and sustainable growth. That’s exactly what our Growth Accelerator Program delivers.</p>
-                <p class="fs-5 medium text-start">Imagine increasing your enrollments by 40% in just 3 months—that’s the power of our Growth Accelerator Program! We make sure your message reaches the right families at the right time, so your leads aren’t just numbers; they’re quality connections ready to enroll.</p>
-                <p class="fs-5 medium text-start"><span class="bold">Struggling with conversions? Let’s change that.</span> Our streamlined enrollment strategies boost conversion rates by 40%, turning curious parents into long-term clients. When it comes to revenue, expect to see an average growth of 5% to 7% Monthly,thanks to retention-focused strategies and smart upselling.</p>
-                <p class="fs-5 semibold text-start"><span class="bold orange">The best part?</span> We use advanced analytics to track everything, ensuring every dollar spent works harder for you.</p>
+            <div class="border-radius mx-auto light-bg">
+                <p class="fs-4 bold text-center">What We Offer</p>
+                <p class="fs-5 medium text-start sm">At NJ Graphica, we know what truly matters to you—more enrollments, higher revenue, and sustainable growth. That’s exactly what our Growth Accelerator Program delivers.</p>
+                <p class="fs-5 medium text-start sm">Imagine increasing your enrollments by 40% in just 3 months—that’s the power of our Growth Accelerator Program! We make sure your message reaches the right families at the right time, so your leads aren’t just numbers; they’re quality connections ready to enroll.</p>
+                <p class="fs-5 medium text-start sm"><span class="bold">Struggling with conversions? Let’s change that.</span> Our streamlined enrollment strategies boost conversion rates by 40%, turning curious parents into long-term clients. When it comes to revenue, expect to see an average growth of 5% to 7% Monthly,thanks to retention-focused strategies and smart upselling.</p>
+                <p class="fs-5 semibold text-start sm"><span class="bold orange">The best part?</span> We use advanced analytics to track everything, ensuring every dollar spent works harder for you.</p>
             </div>
         </div>
 
@@ -297,13 +318,13 @@
                     <div class="col-md-6 text-center p-4 p-md-5 bg-white border-radius">
                         <img src="media/red-house.png" alt="House icon in red color" width="52">
                         <h3 class="medium my-3">Option 1</h3>
-                        <p class="fs-5 medium">You can forget about this and go back to doing
+                        <p class="fs-5 medium sm">You can forget about this and go back to doing
                             what you were and you will be in the same situation</p>
                     </div>
                     <div class="col-md-6 text-center p-4 p-md-5 bg-white border-radius">
                         <img src="media/green-house.png" alt="House icon in green color" width="52">
                         <h3 class="medium my-3">Option 2</h3>
-                        <p class="fs-5 medium">Be an action taker, book a call and get a detailed roadmap from someone who has already worked with 20+ daycare centers.</p>
+                        <p class="fs-5 medium sm">Be an action taker, book a call and get a detailed roadmap from someone who has already worked with 20+ daycare centers.</p>
                     </div>
                 </div>
             </div>
@@ -332,7 +353,7 @@
                 </div>
 
                 <div class="row d-lg-none d-inline-block">
-                    <div class="col-12 mb-3">
+                    <div class="col-12 mb-5">
                         <div class="ratio ratio-16x9 border-radius overflow-hidden">
                             <video controls>
                                 <source src="media/debfff62-d0d5-4495-a1cf-cb4d37e8b079 (1).mov" type="video/mp4">
@@ -349,7 +370,6 @@
                         <p>Vikas works collaboratively with all the stakeholders to create and provide a safe, nurturing and enriching playful environments for all the children.</p>
                         <p>His vision and mission are to help every child to realize its full potential by setting up a strong foundation in their early years of life.</p>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -556,14 +576,9 @@
             <p class="text-center m-0">© 2025 <a href="#">NJ Graphica.</a> All Rights Reserved</p>
         </footer>
 
-        <script src="js/bootstrap.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
-        <!-- Include jQuery (Slick depends on it) -->
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-		<!-- Include Slick Slider JS -->
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="js/swiper-bundle.min.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

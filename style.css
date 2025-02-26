@@ -334,6 +334,14 @@ p.font-18.bold.text-start {
     margin-bottom: 100px;
 }
 
+.white.container .border-radius.mx-auto.light-bg {
+    margin-top: 55px;
+    margin-bottom: 0;
+    padding: 55px 60px;
+    border: 1px solid rgb(237 156 0 / 24%);
+    box-shadow: 0px 2px 14px 2px #e8d8d8;
+}
+
 span.green-highlight {
     background: var(--green);
     color: #fff;
@@ -350,7 +358,8 @@ span.green-highlight {
 }
 
 .options .bg-white {
-    box-shadow: 0px 0px 34px 2px rgb(25 25 24 / 9%);
+    box-shadow: 0px 0px 34px 2px #f1ede2;
+    outline: 1px solid #f3ecdb;
 }
 @media only screen and (min-width: 1200px) {
     .options .container {
@@ -410,7 +419,7 @@ span.green-highlight {
 
 .white.container.w-940 {
     padding-top: 95px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 .white.container.w-940 .border-radius.white.box-shadow.mx-auto {
@@ -477,6 +486,10 @@ footer a{
     text-decoration: none;
     color: #000;
 }
+
+.ratio.ratio-16x9.border-radius.overflow-hidden {
+    background: #363434;
+}
 @media only screen and (min-width: 768px) {
     .results p.font-22.bold.blue {
         margin-top: 73px;
@@ -517,6 +530,10 @@ img.right-frame-for-banner.position-absolute {
     bottom: 50px;
     right: 83px;
 }
+
+.white .d-md-flex.justify-content-between.align-items-center.font-18.medium {
+    padding: 12px 5px;
+}
 }
 
 @media only screen and (min-width: 992px) and (max-width:1250px) {
@@ -530,10 +547,6 @@ img.right-frame-for-banner.position-absolute {
 }
 
 @media only screen and (max-width: 767px) {
-
-    .white.challenges .d-lg-none {
-        display: none!important;
-    }
 
     .container-fluid, container,
     .container.white.challenges
@@ -572,10 +585,11 @@ img.right-frame-for-banner.position-absolute {
         text-align: center !important;
     }
 
-    .d-md-flex.justify-content-between.align-items-center.font-18.medium {
+    .white .d-md-flex.justify-content-between.align-items-center.font-18.medium {
         margin-right: 0 !important;
         padding: 12px !important;
         font-size: 16px;
+        margin-bottom: 15px;
     }
 
     .long-term-impact .container.bg-white.border-radius {
@@ -593,7 +607,11 @@ img.right-frame-for-banner.position-absolute {
         padding-top: 50px;
         padding-bottom: 50px;
     }
-    .white.container.w-940, .container.faqs.w-940 {
+    .white.container.w-940 {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    .container.faqs.w-940 {
         padding-top: 50px;
         padding-bottom: 70px;
     }
@@ -623,9 +641,6 @@ img.right-frame-for-banner.position-absolute {
         line-height: 30px !important;
     }
 
-    p.fs-5 {
-        font-size: 18px !important;
-    }
     .font-18 {
         font-size: 16px;
     }
@@ -645,6 +660,7 @@ img.right-frame-for-banner.position-absolute {
     }
 
     .our-work .col.border-radius:first-child,
+    .our-work .col.border-radius:nth-child(2),
     .options .bg-white:first-child {
         margin-bottom: 20px;
     }
@@ -667,6 +683,34 @@ img.right-frame-for-banner.position-absolute {
     .d-lg-none{
         display: none !important;
     }
+
+    .challenges p.fs-5.medium, .challenges span.fs-5 {
+        font-size: 16px !important;
+        line-height: 1.6;
+    }
+
+    .challenges span.bold.fs-4 {
+        font-size: 18px !important;
+    }
+
+    .challenges p.semibold.orange.fs-4.mt-4 {
+        margin-top: 1rem !important;
+    }
+
+    p.sm{
+        font-size: 16px !important;
+    }
+
+    span.yellow-hightlight.text-white {
+        line-height: 1.6;
+    }
+
+    .white.container .border-radius.mx-auto.light-bg {
+        margin-top: 55px;
+        margin-bottom: 0;
+        padding: 40px 20px;
+    }
+
 }
 
 
@@ -760,4 +804,47 @@ img.right-frame-for-banner.position-absolute {
         margin-right: auto;
     }
 
+}
+
+
+.modal-dialog {
+    max-width: 700px;
+    top: 28%;
+}
+.modal-content {
+    border-radius: 30px !important;
+}
+
+.popup-close-btn {
+    background: var(--orange);
+    border-radius: 30px;
+    border: 1px solid var(--orange);
+    font-size: 20px;
+    line-height: 1;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+input#email {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+input#submit {
+    width: auto;
+    background: var(--orange);
+    border: 1px solid #db9d3f;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 30px;
+    padding: 10px 35px;
+    margin-top: 15px;
+    font-family: "Inter", serif !important;
 }
